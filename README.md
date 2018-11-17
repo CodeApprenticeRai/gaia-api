@@ -1,2 +1,2 @@
 # gaia-api
-api for gaia
+api for https://github.com/CodeApprenticeRai/Gaia
