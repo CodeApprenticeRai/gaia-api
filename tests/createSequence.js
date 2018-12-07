@@ -22,9 +22,3 @@ mongoose.connect(db_uri);
 //     }
 //   );
 // });
-
-User.findOne({ title: 'gaia'}, (err1, res1) => {
-  User.findOne( res1.associatedUserID, ( err2, res2) => {
-    console.log( res2);
-  });
-});
