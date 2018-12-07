@@ -1,10 +1,10 @@
-var mongosoe = require('mongoose');
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
 var sequenceSchema = new Schema({
-  title: { type: String, required: true }.
-  notes: { type: String, },
+  title: { type: String, required: true, unique: true },
+  notes: { type: String },
   associatedUserID: { type: Schema.Types.ObjectId, required: true, ref:'User'}
 });
 
